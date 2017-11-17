@@ -59,6 +59,7 @@ class MarkupPlugin extends GenericPlugin {
 	//
 	// Plugin Setup
 	//
+
 	/**
 	 * Get the system name of this plugin.
 	 * The name must be unique within its category.
@@ -93,7 +94,7 @@ class MarkupPlugin extends GenericPlugin {
 	 * @return string Plugin template path
 	 */
 	function getTemplatePath() {
-		return parent::getTemplatePath() . 'templates/';
+		return $this->getTemplateResourceName() . ':templates/';
 	}
 
 	/**
@@ -228,6 +229,7 @@ class MarkupPlugin extends GenericPlugin {
 		if ($success && $this->getEnabled()) {
 			$this->import('MarkupPluginUtilities');
 			$this->registerCallbacks();
+			$this->_registerTemplateResource();
 		}
 
 		return $success;
