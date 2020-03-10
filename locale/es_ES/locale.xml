@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+<!--
+  * @file plugins/generic/markup/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2003-2013 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Document Markup plugin localization strings for the es_ES Español (España) locale.
+  -->
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.markup.archive.bad_filename">Nombre de archivo no está presente</message>
+	<message key="plugins.generic.markup.archive.bad_zip">Error al procesar el archivo comprimido ({$file}): {$error} </message>
+	<message key="plugins.generic.markup.archive.description">Este archivo incluye copias analizadas y convertidas NLM-XML, HTML y PDF de su artículo. También contiene imágenes adjuntas y datos de citas estructuradas en formato BibTeX (para importar en bases de datos de referencia tales como Zotero o Mendeley).</message>
+	<message key="plugins.generic.markup.archive.downloaded">Servidor de marcado de documentos. Estado: RECIBIDO DEL SERVIDOR.</message>
+	<message key="plugins.generic.markup.archive.enable">El módulo de marcado de documentos debe estar habilitado.</message>
+	<message key="plugins.generic.markup.archive.is_zip">El archivo suplementario ya está en un archivo zip.</message>
+	<message key="plugins.generic.markup.archive.login">Debe iniciar sesión para acceder a este archivo.</message>
+	<message key="plugins.generic.markup.archive.no_access">No tiene permiso para acceder a este archivo.</message>
+	<message key="plugins.generic.markup.archive.no_article">El artículo no existe.</message>
+	<message key="plugins.generic.markup.archive.no_articleID">"El ID del artículo no es válido o está ausente."</message>
+	<message key="plugins.generic.markup.archive.no_file">El archivo no existe: ({$file}).</message>
+	<message key="plugins.generic.markup.archive.no_job">ID de trabajo no válido: ({$jobId})</message>
+	<message key="plugins.generic.markup.archive.no_journal">La solicitud debe estar vinculada a una publicación.</message>
+	<message key="plugins.generic.markup.archive.no_url">No ha especificado una dirección de servidor de marcado (el valor predeterminado debe ser http://pkp-udev.lib.sfu.ca).</message>
+	<message key="plugins.generic.markup.archive.portalSubTitle">Estado del documento</message>
+	<message key="plugins.generic.markup.archive.portalTitle">Módulo de marcado de documentos PKP Open Journal Systems</message>
+	<message key="plugins.generic.markup.archive.processing">Servidor de marcado de documento. Estado: PROCESANDO...</message>
+	<message key="plugins.generic.markup.archive.status">El servidor de marcado de documento devolvió: {$message} </message>
+	<message key="plugins.generic.markup.archive.supp_file_missing">Aunque existe un registro suplementario "Archivos de marcado de documentos", el mismo no se encuentra.</message>
+	<message key="plugins.generic.markup.archive.supp_missing">Falta el artículo o su archivo REGISTRO suplementario "Archivos de marcado de documentos". Intente volver a cargar el artículo para regenerar los archivos de marcado.</message>
+	<message key="plugins.generic.markup.description">Cuando un autor, editor o revisor carga una nueva versión (en formato DOC/DOCX/ODT) de un artículo, este módulo lo envía al servidor de marcado de documentos especificado en la configuración. Luego recibe galeras analizadas y formateadas en XML, HTML y PDF del artículo.</message>
+	<message key="plugins.generic.markup.displayName">Módulo de marcado de documento</message>
+	<message key="plugins.generic.markup.error">Error!</message>
+	<message key="plugins.generic.markup.errors.errorMessage">No se pueden recuperar las versiones XML y HTML del artículo. El módulo de marcado de documentos debe estar habilitado y el estilo de cita debe proporcionarse en la sección Configuración de la publicación.</message>
+	<message key="plugins.generic.markup.optional.cslStyleName">El nombre del estilo de cita es opcional.</message>
+	<message key="plugins.generic.markup.optional.markupHostPass">La contraseña es opcional.</message>
+	<message key="plugins.generic.markup.optional.markupHostUser">Nombre de usuario es opcional.</message>
+	<message key="plugins.generic.markup.optional.reviewVersion">Alternar para la versión de revisión es opcional.</message>
+	<message key="plugins.generic.markup.required.cslStyle">El estilo de la cita es obligatorio.</message>
+	<message key="plugins.generic.markup.required.markupHostURL">La dirección del servidor es obligatoria.</message>
+	<message key="plugins.generic.markup.settings">Configuraciones</message>
+	<message key="plugins.generic.markup.settings.cslStyle">Seleccionar Estilo de la cita (CSL):</message>
+	<message key="plugins.generic.markup.settings.cslStyleSubmitErrorMessage">Servidor de marcado de documentos no válido! Por favor, especifique la dirección URL correcta.</message>
+	<message key="plugins.generic.markup.settings.cslStyleFieldHelp">Establecer el estilo de cita preferido para el marcado.</message>
+	<message key="plugins.generic.markup.settings.cssStyles">Hojas de estilos:</message>
+	<message key="plugins.generic.markup.settings.cssStylesHelp">Esta hoja de estilo CSS afecta el diseño de los artículos generados por este módulo. Los estilos predeterminados se proporcionan automáticamente. Puede reemplazarlos con sus propias versiones personalizadas utilizando el <![CDATA[<a href="{$url}" class="action" target="_blank">administrador de archivos</a>]]></message>
+	<message key="plugins.generic.markup.settings.curlSupport">Soporte PHP Curl:</message>
+	<message key="plugins.generic.markup.settings.curlSupportHelp">PHP curl necesita ser instalado en su servidor. Este módulo utiliza curl para enviar los archivos de los artículos al servidor de marcado de documentos para su procesamiento.</message>
+	<message key="plugins.generic.markup.settings.disabled">Deshabilitado</message>
+	<message key="plugins.generic.markup.settings.enabled">Habilitado</message>
+	<message key="plugins.generic.markup.settings.installed">Instalado</message>
+	<message key="plugins.generic.markup.settings.markupHostAccountHelp">Se requiere una identificación de usuario para usar el servicio de conversión. Puede obtener uno gratis en el <![CDATA[<a href="http://pkp-udev.lib.sfu.ca/" target="_blank">servicio de marcado de documentos PKP</a>]]>.</message>
+	<message key="plugins.generic.markup.settings.markupHostPass">Contraseña:</message>
+	<message key="plugins.generic.markup.settings.markupHostURL">Servidor de marcado de documentos:</message>
+	<message key="plugins.generic.markup.settings.markupHostURLHelp">La publicación recuperará los documentos convertidos desde esta dirección URL del servidor. Normalmente no debe cambiar esta configuración.</message>
+	<message key="plugins.generic.markup.settings.markupHostUser">ID de usuario:</message>
+	<message key="plugins.generic.markup.settings.notInstalled">No instalado</message>
+	<message key="plugins.generic.markup.settings.pathInfo">Rutas URL</message>
+	<message key="plugins.generic.markup.settings.pathInfoHelp">"Activado" es la selección predeterminada si su servidor lo admite. Si se establece en la opción "Deshabilitado", pueden faltar imágenes de la versión HTML de los artículos.</message>
+	<message key="plugins.generic.markup.settings.php5Support">PHP 5.x:</message>
+	<message key="plugins.generic.markup.settings.php5SupportHelp">Este módulo solo es compatible con PHP 5+.</message>
+	<message key="plugins.generic.markup.settings.saved">Configuración guardada!</message>
+	<message key="plugins.generic.markup.settings.zipSupport">Soporte para descomprimir PHP:</message>
+	<message key="plugins.generic.markup.settings.zipSupportHelp">PHP zlib necesita estar instalado en su servidor OJS. Este módulo usa zlib para descomprimir los archivos del servidor de marcado de documentos.</message>
+	<message key="plugins.generic.markup.settings.overrideGalley">Anular galerada:</message>
+	<message key="plugins.generic.markup.settings.overrideGalleyNo">No anular documentos</message>
+	<message key="plugins.generic.markup.settings.overrideGalleyYes">Anular documentos</message>
+	<message key="plugins.generic.markup.settings.overrideGalleyFieldHelp">Si los documentos existentes en la galera deben anularse o no en la carga de un nuevo diseño.</message>
+    <message key="plugins.generic.markup.settings.wantedFormats">Formatos de documentos:</message>
+	<message key="plugins.generic.markup.settings.wantedFormatsHelp">Seleccione formatos de los documentos.</message>
+</locale>
